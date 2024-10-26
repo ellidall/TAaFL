@@ -1,0 +1,66 @@
+{
+  // Комментариями названы разделы согласно https://www.typescriptlang.org/tsconfig
+  "compilerOptions": {
+    // Type Checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "strict": true,
+    "useUnknownInCatchVariables": true,
+
+    // Modules
+    "baseUrl": "./",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "types": ["node"],
+
+    // Emit
+    "noEmit": true,
+    "newLine": "lf",
+    "declaration": false,
+    "sourceMap": false,
+
+    // JavaScript Support
+    "allowJs": true,
+    "checkJs": true,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Language and Environment
+    "target": "ES2019",
+    "lib": [
+      "es2019",
+      "dom",
+      "dom.iterable",
+      "ES2021.String"
+    ],
+
+    // Completeness
+    "skipLibCheck": true,
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+  ],
+  "exclude": [
+    "node_modules/**",
+  ],
+  "ts-node": {
+    "esm": true
+  }
+}
